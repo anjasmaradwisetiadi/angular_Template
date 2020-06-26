@@ -1,0 +1,18 @@
+
+<div class="row justify-content-center">
+  <div class="col-md-4 justify-content-center">
+    <a *ngFor='let dataUser of dataUsers;let i=index;' 
+    (click)="sendDetailData()">
+      <ul class="list-group" [ngStyle]="{backgroundColor:getColor(i)}">
+        <li> UserId : {{dataUser.userId}}</li>
+        <li> title : {{dataUser.title}}</li>
+        <li> Completed : {{dataUser.completed}}</li>
+        <br>
+      </ul>
+    </a>
+
+  </div>
+</div>
+<div>
+
+</div>
