@@ -8,13 +8,13 @@ import { dataJsonUpdate } from '../dataJson.service';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-  detailData: dataShares[];
+  detailDatas: dataShares;
   constructor(private dataJson:dataJsonUpdate) { }
 
   ngOnInit() {
-    this.dataJson.getDetailData
+    return this.dataJson.getDetailData
     .subscribe(
-      (detail: dataShares[])=>this.detailData = detail)
+      detail=>this.detailDatas = detail);
     
   }
 

@@ -13,7 +13,7 @@ export class dataJsonUpdate {
     constructor(private data_Url:HttpClient){
 
     }
-    getUser(){
+    getUser(){ 
         return this.data_Url.get<dataShares>(this.getUrl);
     }
     getConsole(){

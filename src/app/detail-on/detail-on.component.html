@@ -1,0 +1,17 @@
+<p>detail-on works in number : {{departmentId}}</p>
+<!-- <div *ngIf="departmentId===1" >
+    <p>berhasil rendered angaka 1</p>
+</div> -->
+<div *ngFor='let dataUser of dataUsers'>
+            <ul class="list-group" 
+            *ngIf='dataUser.id == departmentId'>
+              <li> UserId : {{dataUser.userId}}</li>
+              <li> id: {{dataUser.id}}</li>
+              <li> title : {{dataUser.title}}</li>
+              <li> Completed : {{dataUser.completed}}</li>
+              <br>
+            </ul>
+</div>
+
+<button class="btn btn-primary" (click)="Next()">Next</button>
+<button class="btn btn-danger" (click)="Back()">Back</button>

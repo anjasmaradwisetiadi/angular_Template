@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { dataJsonUpdate } from './dataJson.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DetailOnComponent } from './detail-on/detail-on.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DetailComponent,
     ListComponent,
     NavigationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DetailOnComponent
   ],
   imports: [
     BrowserModule,
